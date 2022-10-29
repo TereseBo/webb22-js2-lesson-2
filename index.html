@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+
+        html{
+            font-size: 48px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body {
+            
+            background-image: linear-gradient(20deg, #000000, purple, #000000);
+            background-position: center;
+            background-size: 300%;
+            height: 200vh;
+            background-color: #298989;
+            color: #4b2989;
+            background-position: ;
+
+        }
+
+        h1#title {
+            /*Dubbel selector används för att säkerställa att rätt sorts element drabbas*/
+            color: aqua;
+        }
+
+        h1#title.title-element {
+            /*Ännu mer specifik än ovan*/
+            color: #fff;
+            /*Selectorn ska sitta ihop*/
+            font-size: 3rem;
+        }
+
+        h1 {
+            background-color: blueviolet;
+            color: wheat;
+            width: 33%;
+
+        }
+
+        header {
+            background-color: palevioletred;
+            height: 200px;
+            width: 4em;
+        }
+
+        .card {
+            position: relative;
+            width: 50%;
+            margin-top: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: #fff;
+            color: black;
+            border-radius: 5px;
+            background-image: url("https://images-ext-1.discordapp.net/external/69lPwl2rXlTzkUHgZrcaUAv2QPToC82zPecWGXOGS24/%3Fw%3D2000/https/img.freepik.com/free-photo/paperboard-texture_95678-72.jpg?width=1565&height=1105");
+        }
+
+        .card img {
+            width: 80%;
+            /*Av omgivande div?*/
+
+            box-sizing: border-box;
+            border-color: rgb(41, 218, 218);
+            border-style: solid;
+            border-width: 5px;
+            border-top-style: dotted;
+
+            /*border: color style width;*/
+            border-radius: 50%;
+            margin: 16px auto;
+            display: block;
+        }
+
+        .card h3 {
+            margin: 0 0 16px;
+            font-weight: 700;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .card p {
+            margin: 0 0 0px;
+            text-align: center;
+        }
+
+        .card-content {
+            background-color: #fff;
+            margin: 20px;
+        }
+
+        .card .card-content h3 {
+            margin: 20px;
+            ;
+        }
+
+        .card .card-content button {
+            border-radius: 50%;
+            border: 0;
+            width: 90px;
+            margin: 20px;
+            background-color: #298989;
+        }
+
+        .card .watermark {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+
+        .card-image-wrapper {
+            position: relative;
+        }
+
+        .card-image-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: #4b2989;
+            color: #fff;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .floating-emoji {
+            position: absolute;
+            top: 16px;
+            right: 3rem;
+
+        }
+
+        .fixed-emoji {
+            position: fixed;
+            bottom: 16px;
+            left: 3rem;
+            z-index: 2;
+        }
+
+        .emoji {
+            padding: 8px;
+            font-size: 24px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .card .watermark#w1 {
+            color: #ff002f;
+            z-index: 3;
+
+        }
+
+        .card .watermark#w2 {
+            color: blueviolet;
+            z-index: 2;
+            transform: translate(1px, 1px);
+        }
+
+        .card .watermark#w3 {
+            color: yellow;
+            z-index: 1;
+            transform: translate(2px, 2px);
+        }
+
+        /* flex-gallery */
+        .gallery{
+            margin:32px 32px 0px;
+            display:flex;
+            width: calc(100% - 64px);
+            padding: 24px;
+            box-sizing: border-box;
+          
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            background-color: azure;
+            flex-direction: row;
+            align-items: center;
+            gap:0px 8px;
+        }
+        .gallery-item{
+       
+    }
+    .wall{
+        margin:32px 32px 0px;
+            display:flex;
+            width: calc(100% - 64px);
+            padding: 24px;
+            box-sizing: border-box;
+            display: grid;
+            background-color: azure;
+            gap: 4px;
+            grid-template-columns: 1fr 2fr 4fr 100px;
+            grid-template-rows: repeat(3 25px);
+            grid-template-areas:"header header header search" "left main main right" "footer footer footer right";
+
+    }
+    .wall > div{
+        background-color: rgb(255, 0, 0);
+        padding: 8px;
+    }
+    #brick1{
+        grid-column: 2/4;/*kolumner definieras inklusivt, sista kolumnen måste inkluders*/
+        grid-row: 1/3;
+        background-color: aqua;
+    }
+    #brick2{
+        grid-column: 3;
+        grid-row: 2;
+        background-color: blueviolet;
+    }
+    #brick3{
+        grid-area: header;
+        background-color: aquamarine;
+    }
+    #brick4{
+        grid-area: search;
+        background-color: yellow;
+    }
+    #brick5{
+        grid-area: left;
+        background-color: rgb(255, 0, 187);
+    }
+    #brick6{
+        grid-area: main;
+        background-color: rgb(0, 255, 64);
+    }
+    #brick7{
+        grid-area: right;
+        background-color: rgb(0, 255, 255);
+    }
+    #brick8{
+        grid-area: footer;
+        background-color: rgb(255, 0, 0);
+    }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="title" class="title-element">CSS</h1>
+
+    </header>
+    <span class="emoji floating-emoji">🐡</span>
+    <span class="emoji fixed-emoji ">🐉</span>
+    <div class="card">
+        <span class="watermark" id="w1">TB</span>
+        <span class="watermark" id="w2">TB</span>
+        <span class="watermark" id="w3">TB</span>
+        <div class="card-image-wrapper">
+
+            <img src="https://picsum.photos/500">
+            <span class="card-image-icon">🌸</span>
+        </div>
+
+        <div class="card-content">
+            <h3>Vad som helst</h3>
+            <h3>Tess</h3>
+            <p>Student</p>
+            <button>Knappis</button>
+        </div>
+    </div>
+    <section class="gallery">
+        <div class="gallery-item">
+            <img class="gallery-item-img" src="https://picsum.photos/100">
+        </div>
+        <div class="gallery-item">
+            <img class="gallery-item-img" src="https://picsum.photos/100">
+        </div>
+        <div class="gallery-item">
+            <img class="gallery-item-img" src="https://picsum.photos/100">
+        </div>
+        <div class="gallery-item">
+            <img class="gallery-item-img" src="https://picsum.photos/100">
+        </div>
+        <div class="gallery-item">
+            <img class="gallery-item-img" src="https://picsum.photos/100">
+        </div>
+        <div class="gallery-item">
+            <img class="gallery-item-img" src="https://picsum.photos/100">
+        </div>
+        <div class="gallery-item">
+            <img class="gallery-item-img" src="https://picsum.photos/100">
+        </div>
+        <div class="gallery-item">
+            <img class="gallery-item-img" src="https://picsum.photos/100">
+        </div>
+        <div class="gallery-item">
+            <img class="gallery-item-img" src="https://picsum.photos/100">
+        </div>
+        <div class="gallery-item">
+            <img class="gallery-item-img" src="https://picsum.photos/100">
+        </div>
+
+
+    </section>
+    <section class="wall">
+        <div id="brick1"></div>
+        <div id="brick2"></div>
+        <div id="brick3"></div>
+        <div id="brick4"></div>
+        <div id="brick5"></div>
+        <div id="brick6"></div>
+        <div id="brick7"></div>
+        <div id="brick8"></div>
+        <div id="brick9"></div>
+        <div id="brick10"></div>
+        <div id="brick11"></div>
+
+    </section>
+</body>
+
+</html>

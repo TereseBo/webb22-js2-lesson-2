@@ -1,0 +1,245 @@
+
+/* GENERAL */
+
+*{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: #FDFDFE;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 100vw;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 24px;
+
+}
+
+h2 {
+    font-size: 22px;
+
+
+}
+
+h3 {
+
+}
+
+.link {
+
+}
+
+.link:hover {
+
+}
+
+.container {
+    /*change to min() for layout solution*/
+    width: 1200px;
+    margin:0px auto 0px;
+
+}
+
+.tag {
+
+
+}
+
+h2.tag {
+
+}
+
+.tag::before {
+
+
+}
+
+h2.tag::before {
+
+}
+
+/* HEADER */
+
+.header {
+    background-color: #4484CE;
+    color:#FFFFFF
+
+}
+
+.header .container {
+
+}
+
+.header-title-letter {
+
+}
+
+.header-search {
+    background-color: #7aa8dc;
+    color: #FFFFFF;
+
+}
+
+.header-search::placeholder {
+
+}
+
+nav .nav-list {
+
+}
+
+/* CONTENT */
+
+.main-header-header{
+background-color: #4a4a4a;
+}
+
+.section-header {
+background-color: #4a4a4a;
+}
+/* ARTICLE */
+
+.article {
+
+
+}
+
+.article:hover .article-overlay {
+
+}
+
+
+
+.featured-articles {
+
+}
+
+
+/* In pseudo redefine background gradient as .article-overlay */
+.article-overlay {
+
+}
+
+.article.main-article {
+
+}
+
+.article1 {
+
+}
+
+.article2 {
+
+}
+
+.article3 {
+
+}
+
+.article4 {
+}
+
+.article5 {
+
+}
+
+.article6 {
+
+}
+
+
+.main-article-play-icon {
+
+}
+
+.main-article-play-icon:hover {
+
+}
+
+.article-content {
+
+
+}
+
+.article-header.main-article-header{
+
+}
+
+.article-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+
+}
+
+.article-summery {
+background-color: #d3d3d3;
+}
+
+.article-tag {
+    background-color: #d3d3d3;
+    font-size: 14px;
+
+}
+
+.article-tag:hover {
+
+}
+
+/* NEWS ARTICLE */
+
+.news-articles {
+
+}
+
+.news-article {
+    height: 350px;
+
+}
+
+.news-article-image {
+height: 200px;
+}
+
+.news-article-header {
+color: #212121;
+font-size: 20px;
+
+}
+
+.news-article-summary {
+background-color: #4a4a4a;
+}
+
+.news-article-tag {
+    font-size: 14px;
+
+}
+
+.main-header-timestamp {
+background-color: #6c6c6c;
+}
+
+/* FOOTER */
+
+footer {
+    background-color:#4c4c4c ;
+    color: #FFFFFF;
+
+
+}
+
+footer .link-grid {
+
+}
+
+.footer .footer-list-item {
+
+}
