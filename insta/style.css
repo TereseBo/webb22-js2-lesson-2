@@ -1,0 +1,86 @@
+*{
+    background-color: rgb(249, 249, 247);
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    
+}
+/*Navigation menu*/
+
+.sidebar{
+    border-right: 5px ridge;
+}
+
+.sidebar__title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.side-nav li{
+   list-style: none;
+   padding: 0.5rem;
+}
+.side-nav li a{
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+/*Main content*/
+.card__header img{
+   
+   
+  
+    margin-right: 00.5rem;
+    width: auto;
+    height: 70%;
+    border-radius: 50%;
+    
+   
+}
+.card__header{
+    height: 2rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+
+
+}
+.card{
+    border: 3px solid rgb(205, 18, 18);
+    margin: auto;
+    
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    
+    
+}
+.card__img{
+    
+    flex-shrink: 2;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border: 3px ridge ;
+    
+}
+.card__text{
+    
+}
+.card__inputfield{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
